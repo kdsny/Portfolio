@@ -1,0 +1,66 @@
+.bg-fx {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bg-fx__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(168, 85, 247, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168, 85, 247, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 20%, transparent 70%);
+}
+
+.bg-fx__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: orb-drift 18s ease-in-out infinite;
+}
+
+.bg-fx__orb--1 {
+  width: 420px;
+  height: 420px;
+  top: -8%;
+  left: -5%;
+  background: rgba(168, 85, 247, 0.22);
+}
+
+.bg-fx__orb--2 {
+  width: 320px;
+  height: 320px;
+  bottom: 10%;
+  right: -8%;
+  background: rgba(124, 58, 237, 0.18);
+  animation-delay: -6s;
+}
+
+.bg-fx__orb--3 {
+  width: 260px;
+  height: 260px;
+  top: 45%;
+  left: 40%;
+  background: rgba(217, 70, 239, 0.12);
+  animation-delay: -12s;
+}
+
+@keyframes orb-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -20px) scale(1.05); }
+  66% { transform: translate(-20px, 25px) scale(0.95); }
+}
+
+[data-theme='light'] .bg-fx__orb--1 {
+  background: rgba(124, 58, 237, 0.12);
+}
+
+[data-theme='light'] .bg-fx__grid {
+  background-image:
+    linear-gradient(rgba(124, 58, 237, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 58, 237, 0.06) 1px, transparent 1px);
+}

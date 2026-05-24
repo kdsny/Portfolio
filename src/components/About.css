@@ -1,0 +1,135 @@
+.about {
+  background: var(--bg-secondary);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.about__card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  backdrop-filter: blur(12px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.about__card:hover {
+  border-color: rgba(192, 132, 252, 0.4);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(192, 132, 252, 0.08);
+}
+
+.about__card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.about__card h3::before {
+  content: '';
+  width: 4px;
+  height: 1.1em;
+  background: linear-gradient(180deg, var(--accent), var(--accent-bright));
+  border-radius: 4px;
+  box-shadow: 0 0 12px var(--accent-glow);
+}
+
+.about__bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.about__bio p {
+  color: var(--text-secondary);
+  font-size: clamp(0.88rem, 2.5vw, 0.96rem);
+  line-height: 1.85;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.about__row {
+  display: grid;
+  grid-template-columns: minmax(110px, 38%) 1fr;
+  gap: 0.75rem 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+
+.about__row:last-child {
+  border-bottom: none;
+}
+
+.about__row dt {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.about__row dd {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.about__soft {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.about__soft h4 {
+  font-size: 0.95rem;
+  color: var(--accent-bright);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.about__soft ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.about__soft li {
+  background: rgba(192, 132, 252, 0.1);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.45rem 1rem;
+  border-radius: 50px;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .about__row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .about__row dd {
+    text-align: left;
+  }
+}
