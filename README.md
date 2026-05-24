@@ -1,87 +1,67 @@
 # Kieth Disney Tumulak Oyao — Portfolio
 
-A modern personal portfolio built with **React** and **Vite**, inspired by a dark cyan-accented developer portfolio design.
+A personal portfolio website built using React and Vite, featuring a modern dark-themed design that showcases my background, technical skills, projects, and experience in computer science and development.
 
-## Tech stack
+## Tech Stack
 
-- React 19
-- Vite 6
-- react-icons (HTML, CSS, React, JavaScript, C, Java, MySQL)
+- React
+- Vite
+- React Icons
+- HTML
+- CSS
+- JavaScript
+- C
+- Java
+- MySQL
 
-## Getting started
+## Development Setup
 
-1. Install dependencies:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Add your profile photo as `public/profile.jpg` (optional — a fallback avatar is used if missing).
-
-3. Run the dev server:
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Build for production:
+Create a production build:
 
 ```bash
 npm run build
 ```
 
-## Project structure
-
-```
-src/
-  components/   # Navbar, Hero, About, Skills, Education, Contact, Footer
-  data/         # Portfolio content (edit portfolio.js to update info)
-  hooks/        # Theme toggle, typewriter effect
-```
-
-## Customize
-
-Edit `src/data/portfolio.js` to update your name, skills, education, links, and stats.
-
-## Deploy to GitHub Pages
-
-This repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that builds and publishes your site automatically.
-
-### 1. Create a GitHub repository
-
-1. Go to [github.com/new](https://github.com/new)
-2. Name it (e.g. `Resume-main` or `portfolio`)
-3. Leave it **public** (required for free GitHub Pages)
-4. Do **not** add a README if you already have files locally
-
-### 2. Push your code
-
-In a terminal, from this project folder:
+## Project Structure
 
 ```bash
-cd d:/Resume-main
-git init
-git add .
-git commit -m "Initial portfolio"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-git push -u origin main
+src/
+├── components/   # Website sections and reusable components
+├── data/         # Portfolio information and content
+└── hooks/        # Custom React hooks
 ```
 
-Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with your GitHub username and repo name.
+The portfolio content is managed through:
 
-### 3. Enable GitHub Pages
+```bash
+src/data/portfolio.js
+```
 
-1. On GitHub, open your repo → **Settings** → **Pages**
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**
-3. After the workflow runs (check the **Actions** tab), your site will be live at:
+## Deployment
 
-`https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+This portfolio includes a GitHub Actions workflow for deployment through GitHub Pages.
 
-Example: `https://kdsny.github.io/Resume-main/`
+Repository setup and deployment are handled through GitHub Actions after pushing the project to GitHub.
 
-### Notes
+Example live site format:
 
-- **`public/profile.png`** must be committed so your photo appears online.
-- If your repo is named `YOUR_USERNAME.github.io`, change `BASE_PATH` in the workflow to `/` instead of `/${{ github.event.repository.name }}/`.
-- First deploy can take 2–5 minutes after you push.
+```bash
+https://username.github.io/repository-name/
+```
+
+## Notes
+
+- `public/profile.jpg` is used for the profile image.
+- Initial deployment through GitHub Pages may take a few minutes.
