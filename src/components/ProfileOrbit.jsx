@@ -45,7 +45,7 @@ export default function ProfileOrbit() {
       <div className="profile-orbit__photo-wrap">
         <img
           className="profile-orbit__photo"
-          src="/profile.png?v=2"
+          src={`${import.meta.env.BASE_URL}profile.png`}
           alt={profile.name}
         />
       </div>
