@@ -90,6 +90,16 @@ export const projects = [
     link: 'https://gawalokal.bscshub.com/',
     linkLabel: 'Visit GawaLokal',
   },
+  {
+    id: 'skypiea',
+    title: 'Skypiea',
+    tag: 'Final Project · C Language',
+    shortDescription:
+      'A hotel booking and reservation system built in Turbo C for our C programming final project.',
+    description:
+      'Skypiea is a console-based hotel booking and reservation system developed in Turbo C as our final project for C programming. The system allows users to manage room reservations, check availability, and handle basic hotel booking workflows through a menu-driven interface. It was built to apply core C concepts such as structures, file handling, loops, and functions in a practical real-world scenario.',
+    tech: ['C', 'Turbo C'],
+  },
 ];
 
 export const navLinks = [
