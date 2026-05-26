@@ -86,7 +86,7 @@ export const projects = [
       'An e-commerce platform for local artisans in Bohol to showcase and sell their crafts online.',
     description:
       'GawaLokal is my undergraduate thesis project — a full e-commerce website built to empower local artisans across Bohol. The platform helps makers gain more visibility for their art, run their stores online, and reach customers beyond their local area. It supports product listings, artisan profiles, and a smoother way for buyers to discover authentic Boholano handmade goods.',
-    tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
+    tech: ['React', 'Vite', 'HTML', 'CSS', 'PHP', 'Hostinger', 'Supabase', 'PostgreSQL'],
     link: 'https://gawalokal.bscshub.com/',
     linkLabel: 'Visit GawaLokal',
   },
