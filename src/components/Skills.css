@@ -39,6 +39,7 @@
 .reveal--visible .skills__grid .skills__card:nth-child(5) { animation-delay: 0.25s; }
 .reveal--visible .skills__grid .skills__card:nth-child(6) { animation-delay: 0.3s; }
 .reveal--visible .skills__grid .skills__card:nth-child(7) { animation-delay: 0.35s; }
+.reveal--visible .skills__grid .skills__card:nth-child(8) { animation-delay: 0.4s; }
 
 @keyframes card-pop {
   from {
@@ -93,6 +94,7 @@
 .skills__card:nth-child(5):hover .skills__icon { color: #a8b9cc; }
 .skills__card:nth-child(6):hover .skills__icon { color: #ed8b00; }
 .skills__card:nth-child(7):hover .skills__icon { color: #4479a1; }
+.skills__card:nth-child(8):hover .skills__icon { color: #777bb4; }
 
 .skills__soft {
   max-width: 640px;

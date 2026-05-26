@@ -8,6 +8,7 @@ import {
   SiReact,
 } from 'react-icons/si';
 import { skills } from '../data/portfolio';
+import PhpIcon from './PhpIcon';
 import './Skills.css';
 
 const iconMap = {
@@ -18,6 +19,7 @@ const iconMap = {
   c: SiC,
   java: FaJava,
   mysql: SiMysql,
+  php: PhpIcon,
 };
 
 export default function Skills() {

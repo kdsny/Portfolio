@@ -25,7 +25,7 @@ export const profile = {
 };
 
 export const stats = [
-  { value: '6+', label: 'Technologies learned' },
+  { value: '7+', label: 'Technologies learned' },
   { value: '10+', label: 'Academic projects' },
   { value: '3', label: 'Languages spoken' },
 ];
@@ -67,6 +67,7 @@ export const skills = [
   { name: 'C', icon: 'c' },
   { name: 'Java', icon: 'java' },
   { name: 'MySQL', icon: 'mysql' },
+  { name: 'PHP', icon: 'php' },
 ];
 
 export const softSkills = [
