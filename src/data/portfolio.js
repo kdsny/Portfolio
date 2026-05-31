@@ -60,8 +60,8 @@ export const education = [
 ];
 
 export const skills = [
-  { name: 'HTML5', icon: 'html' },
-  { name: 'CSS3', icon: 'css' },
+  { name: 'HTML', icon: 'html' },
+  { name: 'CSS', icon: 'css' },
   { name: 'React', icon: 'react' },
   { name: 'JavaScript', icon: 'javascript' },
   { name: 'C', icon: 'c' },
